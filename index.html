@@ -93,9 +93,91 @@
 	
 </script>
 <style>
-body,html{width:100%;min-height:100%;margin:0;padding:0}a{border:none}#background{position:absolute;top:0;left:0;height:100%;width:100%;background-image:url("images/bg.jpg");background-size:cover}#container{position:absolute;top:0;left:0;width:100%;min-height:100%}#door{position:absolute;bottom:40px;max-width:416px;right:50%;transform:translate(50%,0);text-align:center;overflow:hidden}#door-wrap{position:relative;bottom:0;left:0}#door img{display:block;margin:auto;width:100%;height:auto}#door .frame{position:relative;bottom:0;z-index:10;transition-duration:.9s;transition-timing-function:ease-in}#door .face{position:absolute;bottom:0;transform-style:preserve-3d;perspective:500px;right:50%;transform:translate(50%,0);width:100%;overflow:hidden}#door .face .front-face{position:relative;z-index:1;transform-origin:center left;transition-duration:1.5s;transition-timing-function:ease-in-out}#door .face{z-index:1}#door .drop{position:absolute;width:100%;right:50%;transform:translate(50%,0);box-sizing:border-box;bottom:0;z-index:0;overflow:hidden}#floor{position:absolute;bottom:0;left:0;width:100%;background-image:url("images/floor.jpg");height:40px}@media(orientation:landscape) and (max-height:800px){#door img{height:88vh;width:auto;max-width:100%}}@media(max-width:416px){#door img{width:82vw;height:auto}}@media(min-height:730px) and (orientation:portrait){#door{max-width:none;} #door img{width:auto !important; height:86vh !important;}} #door:hover .face .front-face{ transform: rotateY(33deg); }
+@import url("font/stylesheet.css");body,html{width:100%;min-height:100%;margin:0;padding:0;font-family: 'trooper_jazzerinibold';}a{border:none}#background{position:absolute;top:0;left:0;height:100%;width:100%;background-image:url("images/bg.jpg");background-size:cover}#container{position:absolute;top:0;left:0;width:100%;min-height:100%}#footer{position:absolute; top: 100%; left: 0; width: 100%; box-sizing: border-box; padding: 0px 12px 10px 20px; text-align:center;background-image:url("images/floor.jpg"); font-size:12px; color:#524d47;}#footer a{color:#524d47;text-decoration: none;display:inline-block; margin: 0 3px;}#door{cursor:pointer;position:absolute;bottom:40px;max-width:416px;right:50%;transform:translate(50%,0);text-align:center;overflow:hidden}#door-wrap{position:relative;bottom:0;left:0}#door img{display:block;margin:auto;width:100%;height:auto}#door .frame{position:relative;bottom:0;z-index:10;transition-duration:.9s;transition-timing-function:ease-in}#door .face{position:absolute;bottom:0;transform-style:preserve-3d;perspective:500px;right:50%;transform:translate(50%,0);width:100%;overflow:hidden}#door .face .front-face{position:relative;z-index:1;transform-origin:center left;transition-duration:1.5s;transition-timing-function:ease-in-out}#door .face{z-index:1}#door .drop{position:absolute;width:100%;right:50%;transform:translate(50%,0);box-sizing:border-box;bottom:0;z-index:0;overflow:hidden}#floor{position:absolute;bottom:0;left:0;width:100%;background-image:url("images/floor.jpg");height:40px}@media(orientation:landscape) and (max-height:800px){#door img{height:88vh;width:auto;max-width:100%}}@media(max-width:416px){#door img{width:82vw;height:auto}}@media(min-height:730px) and (orientation:portrait){#door{max-width:none;} #door img{width:auto !important; height:86vh !important;}} #door:hover .face .front-face{ transform: rotateY(33deg); }
 </style>
 </head>
 
-<body><div id="background"></div><div id="container"><div id="wrapper"><div id="door" class=""><a><div id="door-wrap"><img class="frame" src="images/door-frame.png" width="416" height="796"/><div class="face"><img class="front-face" src="images/door-face.png" width="416" height="796"/><div class="drop"><img src="images/011.png" class="" /></div></div></div></a></div></div><div id="floor"></div></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-HFQPDKL88D"></script><script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'G-HFQPDKL88D');</script></body>
+<body><div id="background"></div><div id="container"><div id="wrapper"><div id="door" class=""><a><div id="door-wrap"><img class="frame" src="images/door-frame.png" width="416" height="796" aria-hidden="true"/><div class="face"><img class="front-face" src="images/door-face.png" width="416" height="796" aria-hidden="true"/><div class="drop"><img src="images/012.png" class="" aria-hidden="true" /></div></div></div></a></div></div><div id="floor"></div></div><footer id="footer"><div class="border"></div> <div class="text">&copy; <script>document.write(new Date().getFullYear())</script> Sony Music Entertainment |<a href="https://www.sonymusic.com/privacy/termsandconditions.html" target="_blank" class="sme-privacy-exclude">Terms&nbsp;and&nbsp;Conditions</a>|<a href="https://www.sonymusic.com/privacypolicy.html" target="_blank" class="sme-privacy-exclude">Privacy&nbsp;Policy</a>|&nbsp;<a href="https://www.sonymusic.com/how-we-use-your-data/" target="_blank">How We Use Your Data</a>|<a target="_blank" href="https://www.sonymusic.com/ccpa-contact-form/" class="sme-privacy-exclude">Do Not Sell My Personal Information</a>|<a target="_blank" href="https://www.sonymusic.com/privacy-policy/#your-california-privacy-rights" class="sme-privacy-exclude">Your California Privacy Rights</a>|<a href="https://www.sonymusic.com/feedback/" target="_blank" class="sme-privacy-exclude">Send&nbsp;Feedback</a></div></footer>
+<script> 
+var twice = false;
+$( "#door" ).click(function() {		
+if(twice){ window.open("https://www.youtube.com/watch?v=O5tALzwZPrg"); twice = false; }
+else { twice = true;}});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HFQPDKL88D"></script><script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'G-HFQPDKL88D');</script><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WP7WV3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WP7WV3');</script> 
+<!-- End Google Tag Manager --><!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o4lx1');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+
+  ttq.load('BTTOBP8RQH54JI5RKAQ0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 716855806 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-716855806"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-716855806');
+</script>
+<!-- Snap Pixel Code -->
+<script type='text/javascript'>
+(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+{a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+r.src=n;var u=t.getElementsByTagName(s)[0];
+u.parentNode.insertBefore(r,u);})(window,document,
+'https://sc-static.net/scevent.min.js');
+
+snaptr('init', 'af0f7b9c-4a8f-49a3-a1b8-4c9fab88e3fc', {
+'user_email': '__INSERT_USER_EMAIL__'
+});
+
+snaptr('track', 'PAGE_VIEW');
+
+</script>
+<!-- End Snap Pixel Code -->
+ <script>
+!function (w, d, t) {
+ w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+ ttq.load('C92DOIFRAOSJ17FRDNEG');
+ ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '977700965768537');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1"
+src="https://www.facebook.com/tr?id=977700965768537&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</body>
 </html>
