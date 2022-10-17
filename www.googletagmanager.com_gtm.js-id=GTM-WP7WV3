@@ -18,7 +18,3 @@ var data = {
 
 };
 
-var productSettings = {
-  "AW-757474210":{"preAutoPii":true}
-};
-
